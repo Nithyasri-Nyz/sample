@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.image-Annam {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.Annam-background-image {
+    width: 100%;
+    height: 500px;;
+    display: block;
+}
+
+.Detail-btns {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color:white;
+    color:red;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Detail-btns:hover {
+    background-color: aqua;
+    transform: scale(1.05);
+}
+
+.Annam-Title {
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    transition: red;
+}
+
+.tab.active {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.tab-content {
+    display: none;
+    padding: 23px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.order-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .btns {
+        top: 10px;
+        right: 10px;
+        font-size: 14px;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab {
+        width: 100%;
+        text-align: left;
+    }
+
+    .order-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
